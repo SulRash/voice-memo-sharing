@@ -1,0 +1,58 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+  
+header, footer {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+}
+  
+header {
+    top: 0;
+}
+  
+footer {
+    bottom: 0;
+}
+  
+.micButton {
+    font-size: 3rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s ease;
+}
+  
+
+.micButton:hover {
+  transform: scale(1.1);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .micButton {
+    font-size: 2rem;
+  }
+}
